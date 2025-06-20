@@ -7,6 +7,7 @@ import { AuthModule } from './auth/auth.module';
 import { PostModule } from './posts/posts.module';
 import { ToxicityReportsModule } from './toxicity-reports/toxicity-reports.module';
 import { ToxicityDetectorModule } from './toxicity-detector/toxicity-detector.module';
+import { ChatModule } from './chat/chat.module';
 import appConfig from 'src/config/app.config';
 
 @Module({
@@ -28,6 +29,7 @@ import appConfig from 'src/config/app.config';
     PostModule,
     ToxicityReportsModule,
     ToxicityDetectorModule,
+    ChatModule,
   ],
 })
 export class AppModule {}

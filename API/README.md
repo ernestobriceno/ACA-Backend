@@ -79,6 +79,23 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+## Real-time Chat
+
+The API exposes a WebSocket gateway under the namespace `chat`.
+Clients must connect using a valid JWT in the `Authorization` header.
+Example connection URL:
+
+```
+ws://localhost:3000/chat
+```
+
+Available events:
+
+- `createRoom` – Create a new chat room.
+- `joinRoom` – Join an existing room by ID.
+- `sendMessage` – Send a message to a room. Messages are moderated before being broadcast.
+
+
 ## Test
 
 ```bash
